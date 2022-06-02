@@ -1,0 +1,71 @@
+.dialog-container{
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 20px 2px  #ddd;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 10px;
+    button{
+        background-color: #fff;
+        border: 1px solid #ddd;
+        width: 100px;
+        border-radius: 0px;
+        font-size: 16px;
+        padding: 15px;
+        cursor: pointer;
+        &:hover, &:focus {
+            background-color: #fff;
+        }   
+    }
+    &.TimerWrap{
+        background-color: #4a4a4a;
+        h2{
+            color: #87bbfe;
+            border-bottom: 2px solid #87bbfe;
+            border-top: 2px solid #87bbfe;
+            padding: 10px 0px;
+            text-align: center;
+            font-size: 18px;
+        }
+        p{
+            color: #fff;
+            font-size: 40px;
+        }
+        .ButtonWrap{
+            border-top: 3px solid #ddd;
+            position: relative;
+            margin-bottom: 20px;
+            &:before{
+                content: '';
+                background-color: #87bbfe;
+                position: absolute;
+                top: -5px;
+                left: 0;
+                width: 50%;
+                height: 6px;
+
+            }
+            button{
+                margin-top: 20px;
+                color: #4a4a4a;
+                padding: 10px;
+                border-radius:5px;
+                border: none;
+                
+                &:nth-child(1){
+                    margin-right: 10px;
+                    background-color: #87bbfe;
+                }
+                &:nth-child(2){
+                    background-color: #d1e5ff;
+                }
+                &:focus, &:hover{
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+
